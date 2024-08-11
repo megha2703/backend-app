@@ -1,0 +1,22 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h1>Current Time Updates via WebSocket</h1>
+    <div id="time">Connecting...</div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const timeDiv = document.getElementById('time');
+        const socket = io();
+
+        socket.on('currentTime', (data) => {
+            timeDiv.textContent = data.currentTime;
+        });
+    </script>
+</body>
+</html>

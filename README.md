@@ -6,6 +6,7 @@ Follow below steps to set up application and run locally:
 1. Set Up Node.Js
 2. Take clone of the repository
 3. Run the command npm install to install all required modules
-4. Run command npm start
-5. Once server is started, application will be run in localhost:port
+4. Rename "sample.env" file to ".env"
+5. Run command npm start
+6. Once server is started, application will be run in localhost:port
    
